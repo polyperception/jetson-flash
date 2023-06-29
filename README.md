@@ -26,11 +26,8 @@ $ dvc pull
 ```
 tar files are located in `./images/` folder.
 
-- Untar balenaOS image :
-
-```sh
-tar -xvf images/balena_os.tar.bz2 -C images/
-```
+- Download balena image from balena cloud :
+Later in the Readme, the location of the balena image is defined as `<path/to/balena_os.img>`
 
 - install dependencies : 
 
@@ -42,7 +39,7 @@ $ npm install
 - Run node.js script : 
 
 ```sh
-./bin/cmd.js -f ./images/balenaOS/balena-cloud-tests-jetson-agx-orin-devkit-2.114.19+rev1-v14.10.10.img -p -o ./ -m jetson-agx-orin-devkit
+./bin/cmd.js -f <path/to/balena_os.img> -p -o ./ -m jetson-agx-orin-devkit
 ```
 
 The flashing process may take 5 - 15 minutes or longer during which a lot of log output will appear. If all goes well, you'll see something similar to the following upon completion:
