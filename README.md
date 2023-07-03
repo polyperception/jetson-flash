@@ -39,7 +39,7 @@ $ npm install
 - Run node.js script : 
 
 ```sh
-./bin/cmd.js -f <path/to/balena_os.img> -p -o ./ -m jetson-agx-orin-devkit
+./bin/cmd.js -f <path/to/balena_os.img>  -m jetson-agx-orin-devkit --acceptLicense yes
 ```
 
 The flashing process may take 5 - 15 minutes or longer during which a lot of log output will appear. If all goes well, you'll see something similar to the following upon completion:
